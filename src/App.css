@@ -4,6 +4,7 @@ html {
 }
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
+  background-image: url(assets/marioworld.jpg);
 }
 .footer {
   position: absolute;
@@ -12,3 +13,63 @@ body {
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
 }
+
+.nav-right {
+  list-style-type: none;
+}
+ 
+ /* ===== Styling for the Productivity Page ===== */
+
+.apptitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.appcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.dailies {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.rewards {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* ===== Styling for the Productivity Page ===== */

@@ -14,7 +14,8 @@ import Footer from './components/Footer'
 import Login from './components/Login'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
-import Welcome from './components/Welcome';
+import Welcome from './components/Welcome'
+import Productivity from './components/Productivity'
 
 // Components
 
@@ -33,7 +34,8 @@ function App() {
       <Route path="/login" component={ Login } />
       <Route path="/profile" component={ Profile } />
       <Route path="/signup" component={ Signup } />
-      <Route path="/welcome" component={ Welcome } />
+      <Route path="/productivity" component={ Productivity }/>
+      <Route path="/" component={ Welcome } />
       </Switch> 
       <Footer />
     </div>

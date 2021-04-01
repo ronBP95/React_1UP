@@ -18,18 +18,21 @@ const Navbar = (props) => {
                             <NavLink className="nav-link"  to="/about">About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link"  to="/login">Login</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link"  to="/profile">Profile</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link"  to="/welcome">Welcome</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link"  to="/signup">Signup</NavLink>
+                            <NavLink className="nav-link"  to="/contact">Contact</NavLink>
                         </li>
                     </ul>
+                    <li className="nav-right">
+                            <NavLink className="nav-link"  to="/productivity">Productivity</NavLink>
+                        </li>
+                    <li className="nav-right">
+                            <NavLink className="nav-link"  to="/login">Login</NavLink>
+                        </li>
+                        {/* <li className="nav-right">
+                            <NavLink className="nav-link"  to="/profile">Profile</NavLink>
+                        </li> */}
+                        <li className="nav-right">
+                            <NavLink className="nav-link"  to="/signup">Signup</NavLink>
+                        </li>
                     {/* {Add code here} */}
                 </div>
             </div>
