@@ -27,7 +27,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MERN Authentication</h1>
       <Navbar>Navbar</Navbar>
       <Switch>
       <Route path="/about" component={ About } />
@@ -36,8 +35,9 @@ function App() {
       <Route path="/signup" component={ Signup } />
       <Route path="/welcome" component={ Welcome } />
       </Switch> 
-
+      <Footer />
     </div>
+   
   );
 }
 
