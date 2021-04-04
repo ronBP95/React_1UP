@@ -7,24 +7,24 @@ const Productivity = () => {
             <div className="appcontainer">
 
                 
-                <div className="todos">
-                <h2>todos</h2>
+                <div className="tasks">
+                <h2 className="sectionheaders">tasks</h2>
                 </div>
 
                 <div className="dailies">
-                <h2>dailies</h2>
-                </div>
-
-                <div className="stats">
-                <h2>stats</h2>
+                <h2 className="sectionheaders">dailies</h2>
                 </div>
 
                 <div className="rewards">
-                <h2>rewards</h2>
+                <h2 className="sectionheaders">rewards</h2>
                 </div>
 
             </div>
-        
+            <div className="mariocontainer">
+                
+                <p>Mario will go here</p>
+            
+            </div>
         </div>
     );
 }

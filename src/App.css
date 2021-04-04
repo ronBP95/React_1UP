@@ -2,23 +2,70 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  background-image: url(assets/marioworld.jpg);
+  background-image: url(assets/marioworld2.jpg);
+  height: 600px;
 }
+
 .footer {
   position: absolute;
+  background-image: url(assets/cropped\ block\ small.png);
   bottom: 0;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
 }
 
+.footertext {
+  color: azure;
+}
+
+.navbar {
+  background-image: url(assets/cropped\ block\ small.png);
+}
+
 .nav-right {
   list-style-type: none;
 }
- 
- /* ===== Styling for the Productivity Page ===== */
+
+.nav-link {
+  color: white;
+}
+
+/* ===== Styling for the Home Page ===== */
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+/* ===== Styling for the Home Page ===== */
+
+/* ===== Styling for the About Page ===== */
+
+.aboutpage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* ===== Styling for the About Page ===== */
+
+/* ===== Styling for the Productivity Page ===== */
 
 .apptitle {
   display: flex;
@@ -33,7 +80,7 @@ body {
   margin-top: 20px;
 }
 
-.todos {
+.tasks {
   display: flex;
   justify-content: center;
   border: 1px solid black;
@@ -41,6 +88,7 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
+  background-color: green;
 }
 
 .dailies {
@@ -51,9 +99,10 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
+  background-color: green;
 }
 
-.stats {
+/* .stats {
   display: flex;
   justify-content: center;
   border: 1px solid black;
@@ -61,7 +110,8 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
-}
+  background-color: green;
+} */
 
 .rewards {
   display: flex;
@@ -71,5 +121,18 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
+  background-color: green;
 }
+
+.sectionheaders {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.mariocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== Styling for the Productivity Page ===== */
