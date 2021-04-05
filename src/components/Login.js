@@ -41,7 +41,7 @@ const Login = (props) => {
 
     if (props.user) {
     console.log(props.user)
-    return <Redirect to="/Profile" user={props.user} />;
+    return <Redirect to="/" user={props.user} />;
     }
 
     return (
