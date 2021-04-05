@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
-import Tasks from '../components/Tasks'
 import TaskModel from '../models/TaskModel'
+import TaskForm from '../components/TaskForm'
+import Task from '../components/Task'
 
 const TaskContainer = () => {
     const [tasks, setTasks] = useState([])
@@ -15,23 +16,23 @@ const TaskContainer = () => {
         fetchData()
     }, [])
 
-    // const createTodo = async(todo) => {
-    //     let newTodo = {
-    //         body: todo,
-    //         completed: false
-    //     }
-    //     setTodos([...todos, anotherTodo.data])
-    // }
-
-        // const anotherTodo = await TodoModel.create(newTodo)
-        // console.log(anotherTodo)
-
+    const createTask = async(task) => {
+        let newTask = {
+            body: task,
+            completed: false
+        }
+        const anotherTask = await TaskModel.create(newTask)
+        console.log(anotherTask)
+        setTasks([... tasks, anotherTask.data])
+    }
     return (
         <div className='TaskContainer'>
-            <Tasks tasks={tasks} />
             <h1>Container is connected!</h1>
+            <Task tasks={tasks} />
+            <TaskForm createTask={createTask} />
         </div>
     );
+
 }
 
 export default TaskContainer;

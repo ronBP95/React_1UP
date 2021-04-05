@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const endPoint = 'localhost:8000/'
+const endPoint = 'http://localhost:8000/user/tasks'
 
 // router.get('/', (req, res)=> {
 //}
@@ -10,8 +10,16 @@ class TaskModel {
         let request = axios.get(endPoint)
         return request
     }
-    static create = (todo) => {
-        let request = axios.post(endPoint, todo)
+    static create = (task) => {
+        let request = axios.post(endPoint, task)
+        return request
+    }
+    static update = (task) => {
+        let request = axios.put(endPoint, task)
+        return request
+    }
+    static destroy = (task) => {
+        let request = axios.destroy(endPoint, task)
         return request
     }
 }

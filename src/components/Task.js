@@ -1,10 +1,10 @@
 import React from 'react';
 import Taskprop from './Taskprop';
 
-const Tasks = (props) => {
-    const listOfTasks = props.tasks.map((taskData, index)=> {
+const Task = (props) => {
+    const listOfTasks = props.task.map((taskData, index)=> {
       return (
-          <Taskprop key={taskData._id} task={taskData} />
+
       )
     })
 
@@ -15,4 +15,4 @@ const Tasks = (props) => {
     );
 }
 
-export default Tasks;
+export default Task;
