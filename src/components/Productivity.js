@@ -1,4 +1,5 @@
 import React from 'react';
+import TaskContainer from '../containers/TaskContainer'
 
 const Productivity = () => {
     return (
@@ -9,6 +10,7 @@ const Productivity = () => {
                 
                 <div className="tasks">
                 <h2 className="sectionheaders">tasks</h2>
+                <TaskContainer />
                 </div>
 
                 <div className="dailies">
