@@ -91,10 +91,6 @@ body {
   background-color: green;
 }
 
-.taskForm {
-  margin: auto;
-}
-
 .dailies {
   display: flex;
   justify-content: center;

@@ -1,17 +1,10 @@
 import React from 'react';
-import Taskprop from './Taskprop';
 
 const Task = (props) => {
-    const listOfTasks = props.task.map((taskData, index)=> {
-      return (
-
-      )
-    })
-
     return (
-        <ul>
-            {listOfTasks}
-        </ul>
+        <li data-tasks-index={props.key}>
+            <span className="task-item">{props.task.body}</span>
+      </li> 
     );
 }
 

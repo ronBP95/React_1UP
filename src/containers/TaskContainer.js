@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import TaskModel from '../models/TaskModel'
 import TaskForm from '../components/TaskForm'
-import Task from '../components/Task'
+import Tasklist from '../components/Tasklist';
 
 const TaskContainer = () => {
     const [tasks, setTasks] = useState([])
@@ -28,7 +28,7 @@ const TaskContainer = () => {
     return (
         <div className='TaskContainer'>
             <h1>Container is connected!</h1>
-            <Task tasks={tasks} />
+            <Tasklist tasks={tasks} />
             <TaskForm createTask={createTask} />
         </div>
     );

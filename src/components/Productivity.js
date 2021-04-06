@@ -1,5 +1,7 @@
 import React from 'react';
 import TaskContainer from '../containers/TaskContainer'
+import DailyContainer from '../containers/DailyContainer'
+import RewardContainer from '../containers/RewardContainer';
 
 const Productivity = () => {
     return (
@@ -15,10 +17,12 @@ const Productivity = () => {
 
                 <div className="dailies">
                 <h2 className="sectionheaders">dailies</h2>
+                <DailyContainer />
                 </div>
 
                 <div className="rewards">
                 <h2 className="sectionheaders">rewards</h2>
+                <RewardContainer />
                 </div>
 
             </div>
