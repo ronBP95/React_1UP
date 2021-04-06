@@ -98,11 +98,16 @@ body {
   margin-left: 15px;
 }
 
+.appbuttonspace {
+  margin-top: 10px;
+}
+
 .prodheader {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .appcontainer {
@@ -125,8 +130,17 @@ body {
 
 #tasktitle {
   margin-top: 30px;
+  margin-left: 20px;
 }
 
+#taskoptions {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#clearbutton{
+  margin-left: 196px;
+}
 .dailies {
   display: flex;
   justify-content: center;
@@ -140,6 +154,7 @@ body {
 
 #dailytitle {
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 /* .stats {
@@ -166,19 +181,20 @@ body {
 
 #rewardtitle {
   margin-top: 30px;
+  margin-left: 15px;
 }
 
 .rewardoptions {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 30px;
 }
 
 .dailyoptions {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 30px;
 }
 
@@ -192,5 +208,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.innermario {
+  background-color: bisque;
+  border: black solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* ===== Styling for the Productivity Page ===== */

@@ -11,15 +11,15 @@ class TaskModel {
         return request
     }
     static create = (task) => {
-        let request = axios.post(endPoint, task)
+        let request = axios.post("http://localhost:8000/user/tasks/create", task)
         return request
     }
-    static update = (task) => {
-        let request = axios.put(endPoint, task)
-        return request
-    }
-    static destroy = (task) => {
-        let request = axios.destroy(endPoint, task)
+    // static update = (task) => {
+    //     let request = axios.put(endPoint, task)
+    //     return request
+    // }
+    static destroy = () => {
+        let request = axios.delete("http://localhost:8000/user/tasks/destroy")
         return request
     }
 }

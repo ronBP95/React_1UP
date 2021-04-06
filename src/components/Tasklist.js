@@ -27,7 +27,7 @@ class TaskList extends React.Component {
      <ul>
          {this.state.tasks.map(task => { 
              console.log(task)
-             return <div key={task._id}>Task: {task.task}</div> })}
+             return <p className="appbuttonspace" key={task._id}>{task.task}<button className="appbutton"> + 10💰</button></p> })}
       </ul>
     )
   }

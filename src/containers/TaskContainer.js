@@ -6,7 +6,7 @@ import Tasklist from '../components/Tasklist';
 
 const TaskContainer = () => {
     const [tasks, setTasks] = useState([])
-   
+
     useEffect(()=> {
         const fetchData = async()=> {
             const res = await TaskModel.all()
@@ -17,19 +17,29 @@ const TaskContainer = () => {
     }, [])
 
     const createTask = async(task) => {
-        let newTask = {
-            body: task,
-            completed: false
+        let newTodo = {
+            "task": "Add Function Works!"
         }
-        const anotherTask = await TaskModel.create(newTask)
+        const anotherTask = await TaskModel.create(newTodo)
         console.log(anotherTask)
-        setTasks([...tasks, anotherTask.data])
+        // setTasks([...tasks, anotherTask.data])
+        window.location.reload();
     }
+
+    const clearTask = async() => {
+        const removeAll = await TaskModel.destroy()
+        console.log(removeAll)
+        window.location.reload();
+    }
+
+   
+
     return (
         <div className='TaskContainer'>
             <img id="tasktitle" src="https://fontmeme.com/permalink/210406/54dbb8ba3a3038833fd0c6c219eee1d0.png" alt="super-mario-font" border="0"></img>
-            <Tasklist tasks={tasks} />
+            <p id="taskoptions"><Tasklist tasks={tasks} /></p>
             <TaskForm createTask={createTask} />
+            <button id="clearbutton" onClick={clearTask}>Clear All</button>
         </div>
     );
 
