@@ -6,23 +6,21 @@ import Music from '../components/Music'
 
 const Productivity = () => {
     return (
+        <div>
+        <h2 className="prodheader">Productivity</h2>
         <div className="appbody">
-        <h1 className="apptitle">React 1UP</h1>
-            <div className="appcontainer">
 
+            <div className="appcontainer">
                 
                 <div className="tasks">
-                <h2 className="sectionheaders">tasks</h2>
                 <TaskContainer />
                 </div>
 
                 <div className="dailies">
-                <h2 className="sectionheaders">dailies</h2>
                 <DailyContainer />
                 </div>
 
                 <div className="rewards">
-                <h2 className="sectionheaders">rewards</h2>
                 <RewardContainer />
                 </div>
 
@@ -31,6 +29,7 @@ const Productivity = () => {
                 <h2>Super Mario Theme</h2>
                 <Music url="https://www.youtube.com/watch?v=NTa6Xbzfq1U"/>
             </div>
+        </div>
         </div>
     );
 }

@@ -48,7 +48,7 @@ const Login = (props) => {
         <div className="row mt-4">
             <div className="col-md-7 offset-md-3">
                 <div className="card card-body">
-                    <h2 className="py-2">Login</h2>
+                <img id="loginlogo"src="https://fontmeme.com/permalink/210406/6fddd43098a7b3558a467f0d4b63241c.png" alt="super-mario-font" border="0"></img>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>

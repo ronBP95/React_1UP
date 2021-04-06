@@ -3,6 +3,16 @@ html {
   min-height: 100%;
 }
 
+.mainheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeheader {
+  margin-top: 30px;
+}
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
   background-image: url(assets/marioworld2.jpg);
@@ -50,6 +60,17 @@ body {
   margin-top: 30px;
 }
 
+#signuplogo {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+#loginlogo {
+    height: 100px;
+    width: 300px;
+    margin-bottom: 50px;
+}
 
 /* ===== Styling for the Home Page ===== */
 
@@ -73,6 +94,17 @@ body {
   margin-top: 30px;
 }
 
+.appbutton {
+  margin-left: 15px;
+}
+
+.prodheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .appcontainer {
   display: flex;
   flex-direction: row;
@@ -91,6 +123,10 @@ body {
   background-color: green;
 }
 
+#tasktitle {
+  margin-top: 30px;
+}
+
 .dailies {
   display: flex;
   justify-content: center;
@@ -100,6 +136,10 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   background-color: green;
+}
+
+#dailytitle {
+  margin-top: 30px;
 }
 
 /* .stats {
@@ -122,6 +162,24 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   background-color: green;
+}
+
+#rewardtitle {
+  margin-top: 30px;
+}
+
+.rewardoptions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.dailyoptions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 .sectionheaders {

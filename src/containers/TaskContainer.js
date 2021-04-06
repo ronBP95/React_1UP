@@ -27,7 +27,7 @@ const TaskContainer = () => {
     }
     return (
         <div className='TaskContainer'>
-            <h1>Container is connected!</h1>
+            <img id="tasktitle" src="https://fontmeme.com/permalink/210406/54dbb8ba3a3038833fd0c6c219eee1d0.png" alt="super-mario-font" border="0"></img>
             <Tasklist tasks={tasks} />
             <TaskForm createTask={createTask} />
         </div>

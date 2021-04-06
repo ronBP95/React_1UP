@@ -47,7 +47,7 @@ const Signup = () => {
         <div className="row mt-4">
             <div className="col-md-7 offset-md-3">
                 <div className="card card-body">
-                    <h2 className="py-2">Signup</h2>
+                <img id="signuplogo" src="https://fontmeme.com/permalink/210406/6e22f44941458e738f2293c16b4b9537.png" alt="super-mario-font" border="0"></img>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
