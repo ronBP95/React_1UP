@@ -2,6 +2,7 @@ import React from 'react';
 import TaskContainer from '../containers/TaskContainer'
 import DailyContainer from '../containers/DailyContainer'
 import RewardContainer from '../containers/RewardContainer';
+import Music from '../components/Music'
 
 const Productivity = () => {
     return (
@@ -27,9 +28,8 @@ const Productivity = () => {
 
             </div>
             <div className="mariocontainer">
-                
-                <p>Mario will go here</p>
-            
+                <h2>Super Mario Theme</h2>
+                <Music url="https://www.youtube.com/watch?v=NTa6Xbzfq1U"/>
             </div>
         </div>
     );
