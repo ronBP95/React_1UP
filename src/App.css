@@ -2,13 +2,247 @@ html {
   position: relative;
   min-height: 100%;
 }
+
+.mainheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeheader {
+  margin-top: 30px;
+}
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
+  background-image: url(assets/marioworld2.jpg);
+  height: 600px;
 }
+
 .footer {
   position: absolute;
+  background-image: url(assets/cropped\ block\ small.png);
   bottom: 0;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
 }
+
+.footertext {
+  color: azure;
+}
+
+.navbar {
+  background-image: url(assets/cropped\ block\ small.png);
+}
+
+.nav-right {
+  list-style-type: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* ===== Styling for the Home Page ===== */
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#signuplogo {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+#loginlogo {
+    height: 100px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+/* ===== Styling for the Home Page ===== */
+
+#cark {
+  height: 250px;
+  width: 200px;
+}
+
+#dond {
+  height: 250px;
+  width: 200px;
+}
+
+#carkquote {
+  margin-top: 40px;
+  color: black;
+  background-color: powderblue;
+}
+
+#dondquote {
+  margin-top: 40px;
+  color: black;
+  background-color: powderblue;
+}
+
+.welcomeheader {
+  margin-top: 40px;
+}
+
+/* ===== Styling for the About Page ===== */
+
+.aboutpage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* ===== Styling for the About Page ===== */
+
+/* ===== Styling for the Productivity Page ===== */
+
+.apptitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.appbutton {
+  margin-left: 15px;
+}
+
+.appbuttonspace {
+  margin-top: 10px;
+}
+
+.prodheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.appcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-image: url(../src/assets/containerbg.jpg)
+}
+
+#tasktitle {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#taskoptions {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#clearbutton{
+  margin-left: 196px;
+}
+.dailies {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-image: url(../src/assets/containerbg2.webp)
+}
+
+#dailytitle {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+/* .stats {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+} */
+
+.rewards {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-image: url(../src/assets/containerbg3.jpg)
+}
+
+#rewardtitle {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.rewardoptions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.dailyoptions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.sectionheaders {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.mariocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innermario {
+  background-color: bisque;
+  border: black solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ===== Styling for the Productivity Page ===== */
