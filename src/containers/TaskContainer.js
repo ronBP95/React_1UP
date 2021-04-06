@@ -23,7 +23,7 @@ const TaskContainer = () => {
         }
         const anotherTask = await TaskModel.create(newTask)
         console.log(anotherTask)
-        setTasks([... tasks, anotherTask.data])
+        setTasks([...tasks, anotherTask.data])
     }
     return (
         <div className='TaskContainer'>

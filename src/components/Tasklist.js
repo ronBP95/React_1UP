@@ -1,5 +1,4 @@
 import React from 'react';
-import Task from './Task';
 
 class TaskList extends React.Component {
   constructor(props) {
@@ -16,6 +15,7 @@ class TaskList extends React.Component {
         this.setState({
           tasks: response.tasks
         })
+        console.log("Data was fetched successfully!")
       })
       .catch(error => {
         console.error(error)
@@ -25,10 +25,13 @@ class TaskList extends React.Component {
   render(){
     return(
      <ul>
-        {this.state.tasks.map(task => { return <Task task={task} />})}
+         {this.state.tasks.map(task => { 
+             console.log(task)
+             return <div key={task._id}>Task: {task.task}</div> })}
       </ul>
     )
   }
 }
 
 export default TaskList;
+
