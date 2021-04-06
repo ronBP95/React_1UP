@@ -10,3 +10,5 @@ There will be two views:
 Non-Auth: Can only see tutorials on how the application works
 Auth: Can view your dashboard and have full functionality of the app. 
 
+Update:
+For the moment, the auth is not working as intended. The productivity view that allows you to create tasks and spend your balance on rewards is available for all users.
