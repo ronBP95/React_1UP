@@ -19,6 +19,7 @@ const Login = (props) => {
         setPassword(e.target.value);
     }
 
+
     let handleSubmit = (e) => {
         e.preventDefault();
 
@@ -35,13 +36,14 @@ const Login = (props) => {
             const decoded = jwt_decode(token);
             // Set current user
             props.nowCurrentUser(decoded);
+            <Redirect to="/productivity" />
         })
         .catch(error => console.log(`Login error`, error));
     }
 
     if (props.user) {
     console.log(props.user)
-    return <Redirect to="/" user={props.user} />;
+    return <Redirect to="/productivity" user={props.user} />;
     }
 
     return (

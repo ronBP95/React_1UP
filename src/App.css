@@ -74,6 +74,32 @@ body {
 
 /* ===== Styling for the Home Page ===== */
 
+#cark {
+  height: 250px;
+  width: 200px;
+}
+
+#dond {
+  height: 250px;
+  width: 200px;
+}
+
+#carkquote {
+  margin-top: 40px;
+  color: black;
+  background-color: powderblue;
+}
+
+#dondquote {
+  margin-top: 40px;
+  color: black;
+  background-color: powderblue;
+}
+
+.welcomeheader {
+  margin-top: 40px;
+}
+
 /* ===== Styling for the About Page ===== */
 
 .aboutpage {
@@ -125,7 +151,7 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
-  background-color: green;
+  background-image: url(../src/assets/containerbg.jpg)
 }
 
 #tasktitle {
@@ -149,7 +175,7 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
-  background-color: green;
+  background-image: url(../src/assets/containerbg2.webp)
 }
 
 #dailytitle {
@@ -176,7 +202,7 @@ body {
   width: 400px;
   margin-left: 10px;
   margin-bottom: 10px;
-  background-color: green;
+  background-image: url(../src/assets/containerbg3.jpg)
 }
 
 #rewardtitle {

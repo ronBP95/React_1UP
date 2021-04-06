@@ -36,12 +36,13 @@ const Signup = () => {
             .then(response => {
                 console.log(response);
                 setRedirect(true);
+                alert("You have successfully registered!")
             })
             .catch(error => console.log(error));
         }
     }
 
-    if (redirect) return <Redirect to="/Profile" />
+    if (redirect) return <Redirect to="/login" />
 
     return (
         <div className="row mt-4">
